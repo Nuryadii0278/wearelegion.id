@@ -1,0 +1,129 @@
+/* Menambahkan background gambar ke seluruh halaman */
+/* Menggunakan background gambar pada halaman */
+body {
+  background-image: url('images/image00.jpg'); /* Ganti dengan path gambar latar belakang Anda */
+  background-size: cover; /* Agar gambar menutupi seluruh halaman */
+  background-position: center center; /* Posisikan gambar di tengah halaman */
+  background-attachment: fixed; /* Gambar tetap saat di-scroll */
+  margin: 25;
+  padding: 0;
+  font-family: "Jolly Lodger", serif; /* Menggunakan font Barriecito */
+}
+
+.jolly-lodger-regular {
+    font-family: "Jolly Lodger", serif;
+      font-weight: 400;
+        font-style: normal;
+        }
+
+
+
+/* Gaya untuk judul */
+.title {
+  font-family: "Jolly Lodger", serif;
+  font-weight: 700; /* Bobot bold */
+  font-size: 7rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+  animation: fadeIn 2s ease-in-out;
+  text-shadow: 3px 2px 1px rgb(13, 13, 13);
+      font-size: 80px;
+      padding:1 rem
+}
+  
+
+/* Container untuk teks */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Pusatkan secara vertikal */
+  align-items: center; /* Pusatkan secara horizontal */
+  text-align: center;
+  position: relative;
+  top: 10%; /* Jarak dari atas layar */
+  width: 100%;
+}
+
+/* Animasi untuk teks judul */
+.title {
+  font-size: 4rem; /* Ukuran teks judul */
+  margin: 0;
+  padding: 0.1rem 1rem; /* Jarak dalam elemen */
+  color: #f5f6f5; /* Warna teks */
+  background: rgba(70, 247, 241, 0); /* Latar belakang gelap semi-transparan */
+  border-radius: 15px; /* Sudut melengkung */
+  animation: fadeIn 2s ease-in-out; /* Animasi muncul */
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  color: #fefdfd;
+  animation: fadeIn 2s ease-in-out 0.5s; /* Animasi dengan delay */
+  text-shadow: 3px 2px 1px rgb(13, 13, 13);
+        font-size: 40px;
+}
+
+/* Tombol */
+.button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #3dced3;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeIn 2s ease-in-out 1s; /* Animasi dengan delay */
+}
+
+.button:hover {
+  background-color: #5346e0;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  opacity: 1,5;
+}
+
+/* Keyframes untuk animasi */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Gerakan dari atas */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Kembali ke posisi awal */
+  }
+}
+/* Galeri Seni */
+.art-gallery {
+  display: grid; /* Menggunakan grid layout */
+    grid-template-columns: repeat(1, 1fr); /* Membuat 2 kolom */
+      gap: 40px; /* Jarak antar gambar */
+        margin: 20px 0;
+          justify-items: center; /* Pusatkan gambar di dalam kolom */
+          }
+
+          .art-gallery img {
+            width: 100%; /* Agar gambar memenuhi kolom */
+              max-width: 800px; /* Batasi lebar gambar */
+                height: auto; /* Jaga agar proporsi gambar tetap */
+                  border-radius: 10px;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                      }
+
+                      .art-gallery img:hover {
+                        transform: scale(1.1); /* Efek pembesaran saat hover */
+                          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+                          }
